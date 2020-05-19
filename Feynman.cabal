@@ -41,6 +41,7 @@ library
                        Feynman.Optimization.PhaseFold,
                        Feynman.Optimization.TPar,
                        Feynman.Optimization.StateFold,
+                       Feynman.Optimization.EquationFold,
 
                        Feynman.Verification.SOP,
 
