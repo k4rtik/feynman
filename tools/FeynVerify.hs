@@ -48,7 +48,7 @@ getSOP src = do
   qc  <- parseDotQC src
   let init = blank (qubits qc \\ Set.toList (inputs qc))
   let sop = circuitSOP . toCliffordT . toGatelist $ qc
-  return $ init <> sop 
+  return . reduce $ init <> sop 
 
 {- Main program -}
 
